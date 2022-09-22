@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:gravity="center_vertical"
+
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -13,6 +14,34 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:hint="Írj be valami szöveget"
+        android:id="@+id/szoveg"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/szoveg"
+        android:text="Nagybetűs szöveg"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nagybetusGomb"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nagybetusGomb"
+        android:text="Kisbetűs szöveg"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/kisbetusGomb"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kisbetusGomb"
+        android:text="Véletlen szín generálás"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/veletlenszinGomb"
         />
 
 </RelativeLayout>
